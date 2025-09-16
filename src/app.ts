@@ -15,3 +15,13 @@ const user: { id: number; name: string; isStudent: boolean } = {
   name: "hong sovannara",
   isStudent: true,
 };
+
+//testing function ===============
+
+const sum = (salary: number[]): number => {
+  const sumSalary = salary.reduce((ac, cu) => {
+    return ac + cu;
+  });
+  return sumSalary;
+};
+console.log(sum([10, 20, 30, 40, 50, 60]));
