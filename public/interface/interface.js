@@ -1,4 +1,5 @@
 "use strict";
+// interface use shape of object------------------------
 Object.defineProperty(exports, "__esModule", { value: true });
 const objectUser = {
     id: 1,
@@ -34,4 +35,10 @@ const myArrr = [
     },
 ];
 console.log(myArrr);
+// function myObj(p:{id:number; auther:string}):void{
+// }
+function myObj(p) {
+    console.log(`hello ${p.id} ${p.auther}`);
+}
+myObj({ id: 1, auther: "nar" });
 //# sourceMappingURL=interface.js.map

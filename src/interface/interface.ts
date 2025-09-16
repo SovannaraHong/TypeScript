@@ -1,3 +1,5 @@
+// interface use shape of object------------------------
+
 interface Post {
   id: number;
   name: string;
@@ -73,3 +75,19 @@ const myArrr: Arr[] = [
   },
 ];
 console.log(myArrr);
+
+//=======================
+
+//use interface in function have paramater is object
+interface FunObj {
+  id: number;
+  auther: string;
+}
+// function myObj(p:{id:number; auther:string}):void{
+
+// }
+function myObj(p: FunObj): void {
+  console.log(`hello ${p.id} ${p.auther}`);
+}
+
+myObj({ id: 1, auther: "nar" });
