@@ -12,9 +12,26 @@ const userRead = {
     dbId: 1,
     name: "nara",
 };
-// userRead.dbId=3
-// userRead.name
-//it can update  id it onlyread
-// use ? in text it optional
-//=================================
+const Mfun = {
+    id: 1,
+    Greeting: () => {
+        console.log("hello");
+    },
+};
+console.log(Mfun);
+const myArrr = [
+    {
+        id: 1,
+        auther: "nara",
+    },
+    {
+        id: 2,
+        auther: "nara",
+    },
+    {
+        id: 3,
+        auther: "nara",
+    },
+];
+console.log(myArrr);
 //# sourceMappingURL=interface.js.map

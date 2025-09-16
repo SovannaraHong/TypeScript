@@ -33,3 +33,43 @@ const userRead: Read = {
 // use ? in text it optional
 
 //=================================
+
+//method interface
+
+interface Method {
+  id: number;
+  name?: string;
+  Greeting(): void;
+}
+
+const Mfun: Method = {
+  id: 1,
+  Greeting: () => {
+    console.log("hello");
+  },
+};
+
+console.log(Mfun);
+
+//====================
+
+//inter face arry object
+interface Arr {
+  id: number;
+  auther: string;
+}
+const myArrr: Arr[] = [
+  {
+    id: 1,
+    auther: "nara",
+  },
+  {
+    id: 2,
+    auther: "nara",
+  },
+  {
+    id: 3,
+    auther: "nara",
+  },
+];
+console.log(myArrr);
