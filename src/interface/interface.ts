@@ -91,3 +91,25 @@ function myObj(p: FunObj): void {
 }
 
 myObj({ id: 1, auther: "nar" });
+
+//===============================
+//exstence -----------------
+
+interface User {
+  name: string;
+  email: string;
+}
+interface IMembership extends User {
+  role: string;
+}
+const user1: User = {
+  name: "Hong Sovannar",
+  email: "nara",
+};
+const admin: IMembership = {
+  role: "admin",
+  name: "nara",
+  email: "admin@124",
+};
+console.log(user1);
+console.log(admin);

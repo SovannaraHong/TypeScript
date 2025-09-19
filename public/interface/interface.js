@@ -41,4 +41,15 @@ function myObj(p) {
     console.log(`hello ${p.id} ${p.auther}`);
 }
 myObj({ id: 1, auther: "nar" });
+const user1 = {
+    name: "Hong Sovannar",
+    email: "nara",
+};
+const admin = {
+    role: "admin",
+    name: "nara",
+    email: "admin@124",
+};
+console.log(user1);
+console.log(admin);
 //# sourceMappingURL=interface.js.map
