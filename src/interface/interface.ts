@@ -31,7 +31,7 @@ const userRead: Read = {
 // userRead.dbId=3
 // userRead.name
 
-//it can update  id it onlyread
+//it cant update  id it onlyread
 // use ? in text it optional
 
 //=================================
@@ -44,56 +44,56 @@ interface Method {
   Greeting(): void;
 }
 
-const Mfun: Method = {
+const M_fun: Method = {
   id: 1,
   Greeting: () => {
     console.log("hello");
   },
 };
 
-console.log(Mfun);
+console.log(M_fun);
 
 //====================
 
 //inter face arry object
 interface Arr {
   id: number;
-  auther: string;
+  author: string;
 }
-const myArrr: Arr[] = [
+const my_Arr: Arr[] = [
   {
     id: 1,
-    auther: "nara",
+    author: "nara",
   },
   {
     id: 2,
-    auther: "nara",
+    author: "nara",
   },
   {
     id: 3,
-    auther: "nara",
+    author: "nara",
   },
 ];
-console.log(myArrr);
+console.log(my_Arr);
 
 //=======================
 
-//use interface in function have paramater is object
+//use interface in function have parameter is object
 interface FunObj {
   id: number;
-  auther: string;
+  author: string;
 }
-// function myObj(p:{id:number; auther:string}):void{
+// function myObj(p:{id:number; author:string}):void{
 
 // }
 function myObj(p: FunObj): void {
-  console.log(`hello ${p.id} ${p.auther}`);
+  console.log(`hello ${p.id} ${p.author}`);
 }
 
-myObj({ id: 1, auther: "nar" });
+myObj({ id: 1, author: "nar" });
 
 //===============================
-//exstence -----------------
+//extent -----------------
 
 interface User {
   name: string;
@@ -103,7 +103,7 @@ interface IMembership extends User {
   role: string;
 }
 const user1: User = {
-  name: "Hong Sovannar",
+  name: "Hong Sovannara",
   email: "nara",
 };
 const admin: IMembership = {
@@ -113,3 +113,27 @@ const admin: IMembership = {
 };
 console.log(user1);
 console.log(admin);
+
+interface AdminType extends userType {
+  author: string;
+}
+
+interface userType {
+  name: string;
+  age: number;
+  gender: string;
+}
+
+const member: userType = {
+  name: "nara",
+  age: 2,
+  gender: "Male",
+};
+const leaderAdmin: AdminType = {
+  author: "admin",
+  name: "akira",
+  age: 35,
+  gender: "male",
+};
+console.log("this is admin ship", leaderAdmin);
+console.log(`this is member ship`, member);

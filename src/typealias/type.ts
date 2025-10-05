@@ -8,13 +8,29 @@ console.log(getColor([1, 2, 3]));
 
 //====================type with function
 
-type Cale = (a: number, b: number) => number;
+type Calc = (a: number, b: number) => number;
 
-const getCale: Cale[] = [];
+const get_Calculate: Calc[] = [];
 
-function getfun(n: number, n1: number): number {
+function get_fun(n: number, n1: number): number {
   return n + n1;
 }
 
-getCale.push(getfun);
-console.log(getCale);
+get_Calculate.push(get_fun);
+console.log(get_Calculate);
+
+//============================
+
+type User = {
+  name: string;
+  email: string;
+};
+type Member = User & {
+  role: boolean;
+};
+const userAdmin: Member = {
+  name: "nara",
+  email: "nara13",
+  role: true,
+};
+console.log(userAdmin);

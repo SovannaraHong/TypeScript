@@ -13,36 +13,36 @@ const userRead = {
     dbId: 1,
     name: "nara",
 };
-const Mfun = {
+const M_fun = {
     id: 1,
     Greeting: () => {
         console.log("hello");
     },
 };
-console.log(Mfun);
-const myArrr = [
+console.log(M_fun);
+const my_Arr = [
     {
         id: 1,
-        auther: "nara",
+        author: "nara",
     },
     {
         id: 2,
-        auther: "nara",
+        author: "nara",
     },
     {
         id: 3,
-        auther: "nara",
+        author: "nara",
     },
 ];
-console.log(myArrr);
-// function myObj(p:{id:number; auther:string}):void{
+console.log(my_Arr);
+// function myObj(p:{id:number; author:string}):void{
 // }
 function myObj(p) {
-    console.log(`hello ${p.id} ${p.auther}`);
+    console.log(`hello ${p.id} ${p.author}`);
 }
-myObj({ id: 1, auther: "nar" });
+myObj({ id: 1, author: "nar" });
 const user1 = {
-    name: "Hong Sovannar",
+    name: "Hong Sovannara",
     email: "nara",
 };
 const admin = {
@@ -52,4 +52,17 @@ const admin = {
 };
 console.log(user1);
 console.log(admin);
+const member = {
+    name: "nara",
+    age: 2,
+    gender: "Male",
+};
+const leaderAdmin = {
+    author: "admin",
+    name: "akira",
+    age: 35,
+    gender: "male",
+};
+console.log("this is admin ship", leaderAdmin);
+console.log(`this is member ship`, member);
 //# sourceMappingURL=interface.js.map
