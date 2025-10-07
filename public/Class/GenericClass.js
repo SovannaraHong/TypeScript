@@ -1,28 +1,16 @@
 "use strict";
+//*best practice
 Object.defineProperty(exports, "__esModule", { value: true });
-class Obj {
-    name;
-    age;
-    constructor(name, age) {
-        this.name = name;
-        this.age = age;
+class Collection {
+    data;
+    constructor(data = []) {
+        this.data = data;
     }
-    feature = [];
-    addFeature(a, b) {
-        this.feature.push(a + b);
+    addData(...item) {
+        this.data.push(...item);
     }
 }
-const numPlus = new Obj("Nara", 43);
-numPlus.addFeature(3, 2);
-console.log(numPlus);
-class GenericClass {
-    name;
-    age;
-    constructor(name, age) {
-        this.name = name;
-        this.age = age;
-    }
-}
-const myClass = new GenericClass("nara", 45);
-console.log(myClass);
+const newObj = new Collection();
+newObj.addData({ brand: "Toyota", price: 34 });
+console.log(newObj);
 //# sourceMappingURL=GenericClass.js.map
