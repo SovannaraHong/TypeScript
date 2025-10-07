@@ -13,4 +13,5 @@ class GenericClass {
   constructor(public name: string, private age: number) {}
 }
 const myClass = new GenericClass("nara", 45);
+
 console.log(myClass);
