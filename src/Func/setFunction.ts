@@ -1,14 +1,33 @@
 // const setFun = new Set<number>();
 // setFun.add(3,34,546,2,3);
 // console.log(setFun);
+//* add item []arr
+// class Collection<T> {
+//   constructor(public data: T[]) {}
+//   addData(...item: T[]): void {
+//     this.data.push(...item);
+//   }
+// }
+// const obj = new Collection<string>(["hdfdlfd", "rdfd"]);
+// obj.addData("dhhkhfd", "dfhksh");
+// console.log(obj);
+//* add item arr obj
 class Collection<T> {
-  constructor(public number: T[] = []) {}
-  setFun() {}
-  addNum(...num: T[]) {
-    this.number.push(...num);
-    this.number = Array.from(new Set(this.number));
+  constructor(public data: T[]) {}
+  addData(...item: T[]): void {
+    this.data.push(...item);
   }
 }
-const obj = new Collection<number>();
-obj.addNum(3, 4, 5, 5, 3, 2, 4, 6, 7);
+type Product = {
+  brand: string;
+  price: number;
+};
+
+const obj = new Collection<Product>([
+  {
+    brand: "hello",
+    price: 34,
+  },
+]);
+obj.addData({ brand: "wwe", price: 200 });
 console.log(obj);
