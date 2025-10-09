@@ -1,9 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 class Product {
-    brand;
-    Id;
-    price;
     constructor(brand, Id, price) {
         this.brand = brand;
         this.Id = Id;
@@ -15,17 +10,15 @@ class Product {
     }
 }
 class Stock extends Product {
-    model;
-    qty;
     constructor(brand, Id, price, model, qty) {
         super(brand, Id, price);
         this.model = model;
         this.qty = qty;
+        this.stockProduct = [];
     }
     show_Bulling() {
         return `Hello from implement`;
     }
-    stockProduct = [];
     addStock(...stock) {
         this.stockProduct.push(...stock);
     }
@@ -41,4 +34,5 @@ objOne.addStock({
 objOne.CalDes(300);
 objOne.show_Bulling();
 console.log(objOne);
+export {};
 //# sourceMappingURL=interfaceWithClass.js.map

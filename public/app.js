@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 //data type
 let userName = "Hong Sovannara";
 let number = 34;
@@ -22,4 +20,5 @@ const sum = (salary) => {
     return sumSalary;
 };
 console.log(sum([10, 20, 30, 40, 50, 60]));
+export {};
 //# sourceMappingURL=app.js.map

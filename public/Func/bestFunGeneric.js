@@ -1,8 +1,6 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 class Collection {
-    item = [];
     constructor(initailItem = []) {
+        this.item = [];
         this.item = Array.from(new Set(initailItem));
     }
     addData(...data) {
@@ -24,4 +22,5 @@ console.log(obj.getAll());
 obj.remove(2);
 console.log(obj.getAll());
 console.log(obj);
+export {};
 //# sourceMappingURL=bestFunGeneric.js.map

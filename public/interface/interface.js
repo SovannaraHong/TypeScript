@@ -1,6 +1,4 @@
-"use strict";
 // interface use shape of object------------------------
-Object.defineProperty(exports, "__esModule", { value: true });
 const objectUser = {
     id: 1,
     name: "nara",
@@ -65,4 +63,5 @@ const leaderAdmin = {
 };
 console.log("this is admin ship", leaderAdmin);
 console.log(`this is member ship`, member);
+export {};
 //# sourceMappingURL=interface.js.map

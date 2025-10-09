@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 const myArr = ["1"];
 const myArr1 = [1];
 const myArr_onion = ["1", 2];
@@ -17,4 +15,5 @@ function Formatting(n) {
     }
 }
 console.log(Formatting("1"));
+export {};
 //# sourceMappingURL=onion.js.map

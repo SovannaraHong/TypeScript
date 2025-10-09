@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 const getColor = (rgb) => {
     return rgb;
 };
@@ -16,4 +14,5 @@ const userAdmin = {
     role: true,
 };
 console.log(userAdmin);
+export {};
 //# sourceMappingURL=type.js.map

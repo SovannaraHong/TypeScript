@@ -1,6 +1,4 @@
-"use strict";
 // class Car {
-Object.defineProperty(exports, "__esModule", { value: true });
 //   fun(brand: string, model: string) {
 //     this.brand = "BMW";
 //     this.model = "7 Series";
@@ -15,8 +13,6 @@ class Car {
         this.brand = "Toyota";
         this.model = "7 series";
     }
-    brand;
-    model;
 }
 const myCar = new Car();
 console.log(myCar);
@@ -28,10 +24,8 @@ class Stock {
         this.model = model;
         this.price = price;
     }
-    brand;
-    model;
-    price;
 }
 const myStock = new Stock("HOda", "kava", 2000);
 console.log(myStock);
+export {};
 //# sourceMappingURL=class.js.map

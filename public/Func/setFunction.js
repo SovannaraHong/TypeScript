@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 // const setFun = new Set<number>();
 // setFun.add(3,34,546,2,3);
 // console.log(setFun);
@@ -15,7 +13,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // console.log(obj);
 //* add item arr obj
 class Collection {
-    data;
     constructor(data) {
         this.data = data;
     }
@@ -31,4 +28,5 @@ const obj = new Collection([
 ]);
 obj.addData({ brand: "wwe", price: 200 });
 console.log(obj);
+export {};
 //# sourceMappingURL=setFunction.js.map

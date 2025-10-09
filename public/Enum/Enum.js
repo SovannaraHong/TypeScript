@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 var Objective;
 (function (Objective) {
     Objective[Objective["Low"] = 1] = "Low";
@@ -16,4 +14,5 @@ function CheckEnum(check) {
     }
 }
 console.log(CheckEnum(2));
+export {};
 //# sourceMappingURL=Enum.js.map

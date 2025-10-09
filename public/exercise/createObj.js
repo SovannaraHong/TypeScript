@@ -1,7 +1,5 @@
-"use strict";
 //create object 2 one for user have id name age gender product string []
 //create object for admin have copy by user and add author and have role in role have arr_obj for detail about role admin
-Object.defineProperty(exports, "__esModule", { value: true });
 const createForAdmin = {
     author: "Admin",
     name: "HONG_SOVANNARA",
@@ -29,4 +27,5 @@ const createForMember = {
     gender: "Male",
 };
 console.log(createForAdmin, createForMember);
+export {};
 //# sourceMappingURL=createObj.js.map

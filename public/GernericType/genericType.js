@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 function showNumber(value) {
     return value;
 }
@@ -28,4 +26,5 @@ console.log(formatUpperCase(displays.toUpperCase()));
 function display(value) {
     return value;
 }
+export {};
 //# sourceMappingURL=genericType.js.map
